@@ -1,0 +1,11 @@
+$(eval $(call addlib_s,libhello,$(CONFIG_LIBHELLO)))
+
+# CINCLUDES-$(CONFIG_LIBHELLO)	+= -I$(LIBHELLO_BASE)/include
+# CXXINCLUDES-$(CONFIG_LIBHELLO)	+= -I$(LIBHELLO_BASE)/include
+################################################################################
+# Library includes
+################################################################################
+CINCLUDES-$(CONFIG_LIBHELLO) += -I$(LIBHELLO_BASE) \
+					-I$(LIBHELLO_BASE)/include
+
+LIBHELLO_SRCS-y += $(LIBHELLO_BASE)/hello.c

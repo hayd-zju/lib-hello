@@ -1,0 +1,5 @@
+menuconfig LIBHELLO
+	bool "libhello: lib hello"
+	select LIBFLEXOS
+	default n
+	
