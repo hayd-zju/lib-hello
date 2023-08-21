@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include<hello/hello.h>
+#include <uk/alloc.h>
+#include <stdlib.h>
 void pr()
 {
-   printf(TO_STRING(hello));
-   printf("\n");
+   flexos_nop_gate(0, 0, printf, "begin!!!!!!!!!!!!!!!");
 }
